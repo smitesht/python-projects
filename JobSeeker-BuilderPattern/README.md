@@ -1,4 +1,4 @@
-# Understand Builder Design Pattern using real life example
+# Understand Builder Design Patterns using real life example
 
 In software development, managing the complexity of creating large, customizable objects can become a challenge, especially when you have optional fields or need a clear, step-by-step construction process. This is where the Builder Pattern comes to the rescue!
 
@@ -145,9 +145,10 @@ class JobSeekerBuilder:
 
     def build(self):
         return self.jobSeeker
+```
+## Main function
 
-
-
+```python
 if __name__ == "__main__":
 
     jhon = JobSeekerBuilder("Jhon","Peter")\

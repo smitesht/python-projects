@@ -55,7 +55,7 @@ class Experience:
 
 ```
 
-**JobSeeker**
+## JobSeeker
 
 ```python
 
@@ -91,6 +91,8 @@ class JobSeeker:
                 )
 
 ```
+
+## JobSeekerBuilder
 
 ```python
 

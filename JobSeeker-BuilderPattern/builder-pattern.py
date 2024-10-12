@@ -35,7 +35,7 @@ class Experience:
         return (f"(Company Name: {self.companyName}, Designation: {self.designation}, StartYear:{self.startDate}, EndYear:{self.endDate})")
     
     def getExperience(self):
-        return self  
+        return self   
 
 class JobSeeker:
     
@@ -45,7 +45,7 @@ class JobSeeker:
         self.lastName = None
         self.dob = None
         self.gender = None
-        self.permnentAddress = None
+        self.permanentAddress = None
         self.currentAddress = None
         self.mobile = None
         self.email = None
@@ -62,7 +62,7 @@ class JobSeeker:
         return (f'Name: {self.firstName} {self.middleName} {self.lastName}\n'
                 f'DoB: {self.dob} - Gender: {self.gender}\n'
                 f'Current Address: {str(self.currentAddress)}\n'
-                f'Permenant Address: {str(self.permnentAddress)}\n'
+                f'Permanent Address: {str(self.permanentAddress)}\n'
                 f'Mobile: {self.mobile}, Email: {self.email}\n'
                 f"Education: {educations_str}\n"               
                 f"Work Experience:{work_experience_str}, \n"
@@ -98,7 +98,7 @@ class JobSeekerBuilder:
         return self
     
     def setPermenantAddress(self, address, city, pincode):
-        self.jobSeeker.permnentAddress = Address(address, city, pincode)        
+        self.jobSeeker.permanentAddress = Address(address, city, pincode)        
         return self
         
     def setCurrentAddress(self, address, city, pincode):
@@ -122,7 +122,8 @@ class JobSeekerBuilder:
         
     
         
-if __name__ == "__main__":
+if __name__ == "__main__":   
+    
     
     jhon = JobSeekerBuilder("Jhon","Peter")\
             .setDateOfBirth('05-10-2000')\

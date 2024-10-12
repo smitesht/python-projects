@@ -67,7 +67,7 @@ class JobSeeker:
         self.lastName = None
         self.dob = None
         self.gender = None
-        self.permnentAddress = None
+        self.permanentAddress = None
         self.currentAddress = None
         self.mobile = None
         self.email = None
@@ -84,7 +84,7 @@ class JobSeeker:
         return (f'Name: {self.firstName} {self.middleName} {self.lastName}\n'
                 f'DoB: {self.dob} - Gender: {self.gender}\n'
                 f'Current Address: {str(self.currentAddress)}\n'
-                f'Permenant Address: {str(self.permnentAddress)}\n'
+                f'Permanent Address: {str(self.permanentAddress)}\n'
                 f'Mobile: {self.mobile}, Email: {self.email}\n'
                 f"Education: {educations_str}\n"
                 f"Work Experience:{work_experience_str}, \n"
@@ -125,7 +125,7 @@ class JobSeekerBuilder:
         return self
 
     def setPermenantAddress(self, address, city, pincode):
-        self.jobSeeker.permnentAddress = Address(address, city, pincode)
+        self.jobSeeker.permanentAddress = Address(address, city, pincode)
         return self
 
     def setCurrentAddress(self, address, city, pincode):
@@ -153,6 +153,7 @@ class JobSeekerBuilder:
 ```python
 if __name__ == "__main__":
 
+
     jhon = JobSeekerBuilder("Jhon","Peter")\
             .setDateOfBirth('05-10-2000')\
             .setGender("Male")\
@@ -172,6 +173,27 @@ if __name__ == "__main__":
 
 
     print(str(jhon))
+
+```
+
+## Output
+
+```
+Name: Jhon  Peter
+
+DoB: 05-10-2000 - Gender: Male
+
+Current Address: 112, Munroe Park, Regina, DCE324
+
+Permanent Address: 1023, Oak St, Albert Avenue, Calgary, ADC234
+
+Mobile: +1-1234567890, Email: jhone@gmail.com
+
+Education: ['(Title: 10th, Institute: Govt. Institute, StartYear:2014, EndYear:2015)', '(Title: 12th, Institute: Govt. Institute, StartYear:2016, EndYear:2017)', '(Title: B.Sc.(Computer Science), Institute: Royal University, StartYear:2017, EndYear:2021)']
+
+Work Experience:['(Company Name: ABCL Software, Designation: Trainee Engineer, StartYear:2021, EndYear:2023)', '(Company Name: Craft Solution, Designation: Software Engineer, StartYear:2023, EndYear:Present)'],
+
+Skills: ['Javascript', 'SQL', 'HTML/CSS']
 
 ```
 

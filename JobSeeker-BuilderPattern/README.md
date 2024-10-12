@@ -87,7 +87,8 @@ class JobSeeker:
                 f'Permenant Address: {str(self.permnentAddress)}\n'
                 f'Mobile: {self.mobile}, Email: {self.email}\n'
                 f"Education: {educations_str}\n"
-                f"Work Experience:{work_experience_str}, "
+                f"Work Experience:{work_experience_str}, \n"
+                f"Skills: {self.skills}"
                 )
 
 ```
@@ -146,6 +147,7 @@ class JobSeekerBuilder:
     def build(self):
         return self.jobSeeker
 ```
+
 ## Main function
 
 ```python

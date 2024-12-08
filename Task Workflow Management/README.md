@@ -14,7 +14,7 @@ The Observer Pattern is a behavior design pattern that defines a one-to-many dep
 
 ## UML
 
-![image](https://github.com/user-attachments/assets/7338979d-d135-4193-8088-b50472f0c803)
+![image](https://github.com/user-attachments/assets/7962c643-0ad6-434a-8cfa-852fd3193d9a)
 
 ### Defina TaskState and TaskObserver abstraction with the Protocol
 
